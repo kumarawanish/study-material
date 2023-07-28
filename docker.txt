@@ -1,0 +1,19 @@
+1. How to run the docker after making the images 
+     docker run -it -p 8000:8000 --name c1 fastapi1 # c1 is the container name and fastapi1 is image
+
+2.How to delete the latest container
+    docker container prune
+
+3.How to shows the images
+    docker images
+
+4. How to make images 
+    docker build -t fastapi1 .  # . means the Dockerfile images
+
+5.How to delete the images
+    docker rmi fastapiapp2 # fastapiapp2 image name
+
+
+6. How to inspect the container
+    docker inspect 5370f094c275 # 5370f094c275 is the container_id
+

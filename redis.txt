@@ -1,0 +1,55 @@
+1. how to set the key in redis?
+    set key value
+    expire key time seconds
+
+2.how to start and checkt the status in redis ?
+    sudo systemctl  status  redis
+    sudo systemctl  start  redis
+    sudo systemctl  stop  redis
+
+    
+3.how to check that key is expire in how much time?
+    ttl key
+
+4.overide in redis 
+    set name rahul
+    set name pooja 
+
+    get name 
+    pooja
+
+5. To avoid overide
+    setnx id 123
+    setnx id 500
+
+    get id 
+    123  if id key is present then it gives old value and if not key present then it make the new but not overide
+
+6.How to remove all keys?
+    flushall
+
+7. How we can set multiple key value pair in redis?
+    mset name raj roll 101 address surat nagar 
+
+8.How to set key with expire time?
+    setex key expiretime value
+
+    ex. setex name 20 rahul
+
+9.How to store the key as list?
+    lpush  students rahul rani neha
+
+    lrange students 0 3
+    lrange students 0 -1 it gives the all push elements
+    if i want to delete the elements in list students
+    lpop students #it remove the first element in begening
+
+10. How to store the data as set ?
+    sadd key elem1 elem2 
+
+    smembers key
+    it take the unique element
+
+11.
+
+
