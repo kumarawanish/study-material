@@ -25,5 +25,8 @@ def find_frequency_using_counter(lst):
 
 # Example usage:
 my_list = [1, 2, 3, 1, 2, 1, 4, 3, 2, 5]
-result = find_frequency_using_counter(my_list)
-print(result)
+# result = find_frequency_using_counter(my_list)
+# print(result)
+
+# my_list.extend(("hello","rahul"))
+# print(my_list)

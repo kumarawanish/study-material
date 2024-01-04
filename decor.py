@@ -30,5 +30,25 @@ def add(a,b):
     c = a+b
     return c
 
-print(add(2,7))
+# print(add(2,7))
 # print(help(add))
+
+
+
+# Decorator with args and kwargs
+def decor1(any_function):
+    def inner(*args,**kwargs):
+        print("Im inner function")
+
+        return any_function(*args, **kwargs)
+    return inner
+
+
+
+
+@decor1
+def myfunc(a,b):
+    return a+b
+
+s = myfunc(2,3)
+print(s)

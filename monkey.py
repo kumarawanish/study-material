@@ -17,3 +17,5 @@ MyClass.getDetails = getDetails
 
 print(obj.getDetails())
 
+# If we want to add extra method in class so we use monkey patching overthere
+

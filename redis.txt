@@ -50,6 +50,7 @@
     smembers key
     it take the unique element
 
-11.
+11. Redis server
+    redis-cli
 
 
